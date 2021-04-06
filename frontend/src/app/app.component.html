@@ -1,0 +1,29 @@
+<nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+    <button mat-button matTooltip="Reload page" class="navbar-brand" [routerLink]="['/csvupload']" (click)="reload()"><mat-icon>sync</mat-icon></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div selected class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button mat-button class="nav-link" [routerLink]="['/csvupload']">
+                    Welcome
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="flex-wrapper">
+   <br><br>
+    <router-outlet class="page-content top-margin"></router-outlet>
+   <br><br>
+    <footer  class="text-white-50 footer bottom fixed-bottom toolbar bg-dark">
+        <div class="container-fluid ">
+            <div class="row pt-2">
+                <br>
+                <br>
+            </div>
+        </div>
+    </footer>
+</div>

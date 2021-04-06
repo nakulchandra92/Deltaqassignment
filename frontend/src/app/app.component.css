@@ -1,0 +1,15 @@
+span{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.page-content{
+    min-height: 1500px;
+}
+.bottom{
+    height:9%;
+    padding-top:10px;
+}
+::ng-deep .gray-snackbar {
+    background:	#373737;
+  }
