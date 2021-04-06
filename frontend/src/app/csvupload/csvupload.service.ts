@@ -8,14 +8,14 @@ import { Observable } from 'rxjs';
 })
 export class CsvuploadService {
 
-  public url = "http://54.93.33.239:5001/process";
+  public url = "http://localhost:5001/process";
 
   constructor(private http: HttpClient) { }
 
 //Uploading File
   postFile(fileToUpload: File): Observable<any> {
       const headers = { 'enctype': 'multipart/form-data' }
-      const endpoint = 'http://54.93.33.239:5001/uploader';
+      const endpoint = 'http://localhost:5001/uploader';
       const formData: FormData = new FormData();
       formData.append('file', fileToUpload);
       return this.http.post<any>(endpoint, formData,{
